@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import cloud from "../assets/cloudBg.png";
 import cloudDark from "../assets/cloudDark.png";
+import SocialMediaCards from "./SocialMediaCards";
 
 const Home = () => {
   const theme = useContext(ThemeContext);
@@ -33,7 +34,7 @@ const Home = () => {
                 className={darkMode ? "block text-black" : "block text-white"}
               >
                 Hello, I am <br />
-                <span className="text-6xl">Subhan Khan</span>
+                <span className="text-6xl">Mohd Subhan Khan</span>
               </motion.span>
               <span className="block text-blue-500 z-0 lg:inline">
                 <ReactTyped
@@ -60,17 +61,7 @@ const Home = () => {
               I am a Full-Stack Developer and Web Designer. I am currently
               working to improve my skills and learn new technologies.
             </p>
-            <div className="flex md:justify-start">
-              {contactLinks.map((el, index) => (
-                <a
-                  key={index}
-                  href={el.link}
-                  className="mr-5 cursor-pointer mt-8 hover:scale-125"
-                >
-                  <img alt={el.name} src={el.url} />
-                </a>
-              ))}
-            </div>
+            <SocialMediaCards/>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
                 <a href="./Subhan Resume.pdf" download>

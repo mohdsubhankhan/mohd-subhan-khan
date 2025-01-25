@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
+import SocialMediaCards from "./SocialMediaCards";
 
 const Contact = () => {
   const theme = useContext(ThemeContext);
@@ -36,9 +37,7 @@ const Contact = () => {
               <div className="my-6">
                 <label
                   htmlFor="name"
-                  className={`block mb-2 text-lg font-medium ${
-                    darkMode ? "text-gray-900" : "text-white"
-                  }`}
+                  className={`block mb-2 text-lg font-medium `}
                 >
                   Name
                 </label>
@@ -53,9 +52,7 @@ const Contact = () => {
               <div className="mb-4">
                 <label
                   htmlFor="email"
-                  className={`block mb-2 text-lg font-medium ${
-                    darkMode ? "text-gray-900" : "text-white"
-                  }`}
+                  className={`block mb-2 text-lg font-medium `}
                 >
                   Email
                 </label>
@@ -70,9 +67,7 @@ const Contact = () => {
               <div className="mb-4">
                 <label
                   htmlFor="message"
-                  className={`block mb-2 text-lg font-medium ${
-                    darkMode ? "text-gray-900" : "text-white"
-                  }`}
+                  className={`block mb-2 text-lg font-medium `}
                 >
                   Message
                 </label>
@@ -87,7 +82,6 @@ const Contact = () => {
                 <div className="underline">
                   <a
                     href="mailto:khanmohdsubhan876@gmail.com"
-                    className={darkMode ? "text-gray-900" : "text-white"}
                   >
                     Send me email directly
                   </a>
@@ -101,22 +95,22 @@ const Contact = () => {
           <div className="w-full flex flex-col md:items-end mt-12 md:mt-6">
             <h1 className="text-3xl font-bold">Email</h1>
             <a
-              href="hello"
+              href="mailto:khanmohdsubhan876@gmail.com"
               className="mb-12 mt-4 font-semibold text-blue-700 block"
             >
               khanmohdsubhan876@gmail.com
             </a>
             <h1 className="text-3xl font-bold">Address</h1>
-            <a
-              href="hello"
+            <h1
+
               className="mt-4 mb-12 md:text-right font-semibold text-blue-700 block"
             >
               Lucknow, Uttar Pradesh,
               <br />
               India
-            </a>
+            </h1>
             <h1 className="text-3xl font-bold">Social</h1>
-            <ul className="flex">
+            {/* <ul className="flex">
               {contactLinks.map((el) => (
                 <a
                   href={el.link}
@@ -126,16 +120,16 @@ const Contact = () => {
                   <img alt={el.name} src={el.url} />
                 </a>
               ))}
-            </ul>
+            </ul> */}
+            <SocialMediaCards/>
           </div>
         </div>
       </div>
       <div
-        className={`w-full text-lg py-3 flex justify-center md:mt-20 ${
-          darkMode ? "bg-white text-black" : "bg-gray-900 text-white"
-        }`}
+        className={`w-full text-lg py-3 flex justify-center md:mt-20 ${darkMode ? "bg-white text-black" : "bg-gray-900 text-white"
+          }`}
       >
-        &copy; 2025 Mohd Subhan Khan All Rights Reserved
+        &copy; 2025 Mohd Subhan Khan. All Rights Reserved.
       </div>
     </div>
   );

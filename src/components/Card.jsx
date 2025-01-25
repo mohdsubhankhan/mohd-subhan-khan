@@ -12,19 +12,19 @@ const Card = (props) => {
       }}
       className="max-w-xl bg-white rounded-lg border border-gray-200 shadow-lg dark:bg-gray-800 dark:border-gray-700 my-8"
     >
-      <a href="hello">
+      <div >
         <img
           className="rounded-t-lg w-full"
           src={props.imagePath}
           alt=""
         />
-      </a>
+      </div>
       <div className="p-5">
-        <a href="helo">
+        <div>
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {props.title}
           </h5>
-        </a>
+        </div>
         <p className="mb-3 text-wrap font-normal text-gray-700 dark:text-gray-400">
           {props.desc}
         </p>
