@@ -19,10 +19,10 @@ const Projects = () => {
           What I Built
         </h4>
         <div className="mt-8 flex justify-between items-stretch flex-wrap">
-          <Card title="Calculator" desc="Hello this is 1st project Hello this is 1st project Hello this is 1st project" imagePath="/calculator.png" liveLink="https://mohdsubhankhan.github.io/calculator-app/"/>
-          <Card title="QR Generator" desc="Hello this is 1st project Hello this is 1st project Hello this is 1st project" imagePath="/qr.png" liveLink="https://mohdsubhankhan.github.io/Qr-generator-app/"/>
-          <Card title="Space" desc="Hello this is 1st project Hello this is 1st project Hello this is 1st project" imagePath="/nasa.png" liveLink="https://mohdsubhankhan.github.io/space/"/>
-          <Card title="Drawing" desc="Hello this is 1st project Hello this is 1st Hello this is 1st project Hello this is 1st Hello this is 1st project Hello this is 1st  project Hello this is 1st project" imagePath="/drawing.png" liveLink="https://mohdsubhankhan.github.io/drawing/"/>
+          <Card title="Calculator" desc="Hello this is 1st project Hello this is 1st project Hello this is 1st project" imagePath="calculator.png" liveLink="https://mohdsubhankhan.github.io/calculator-app/"/>
+          <Card title="QR Generator" desc="Hello this is 1st project Hello this is 1st project Hello this is 1st project" imagePath="qr.png" liveLink="https://mohdsubhankhan.github.io/Qr-generator-app/"/>
+          <Card title="Space" desc="Hello this is 1st project Hello this is 1st project Hello this is 1st project" imagePath="nasa.png" liveLink="https://mohdsubhankhan.github.io/space/"/>
+          <Card title="Drawing" desc="Hello this is 1st project Hello this is 1st Hello this is 1st project Hello this is 1st Hello this is 1st project Hello this is 1st  project Hello this is 1st project" imagePath="drawing.png" liveLink="https://mohdsubhankhan.github.io/drawing/"/>
           
         </div>
       </div>

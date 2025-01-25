@@ -43,7 +43,7 @@ const Navbar = () => {
                   : "flex gap-2 text-xl font-medium text-decoration-none whitespace-nowrap text-white"
               }
             >
-            <img src="/logo.png" alt="" width={30}/>
+            <img src="logo.png" alt="" width={30}/>
             {` Mohd Subhan Khan`}
             </a>
           </div>
